@@ -1,9 +1,34 @@
-*{
-    margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
+
+body{}
+
+section {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 20vh 70vh 10vh;
-    grid-area: "c c c" "m p a" "r r r";
+    grid-template-areas: "c c c" "m p a" "r r r";
+
 }
+
+header {
+    background-color: #7c7c7c;
+    grid-area: c;
+}
+
+nav {
+
+    background-color: #F5F3F3;
+    grid-area: m;
+}
+aside {
+        height: 100px;
+        background-color: #C4C4C4;
+        grid-area: a;
+}
+        footer {
+            background-color: #212121;
+            grid-area: r;
+        }
