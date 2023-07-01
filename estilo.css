@@ -6,9 +6,9 @@
 body{}
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 20vh 70vh 10vh;
+    display: inline-grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 5vh 5vh 5vh 5vh;
     grid-template-areas: "c c c" "m p a" "r r r";
 
 }
@@ -18,7 +18,7 @@ header {
     grid-area: c;
 }
 
-nav {
+#nav-topo {
 
     background-color: #F5F3F3;
     grid-area: m;
