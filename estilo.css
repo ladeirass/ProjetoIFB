@@ -6,7 +6,7 @@
 body{}
 
 section {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 5vh 5vh 5vh 5vh;
     grid-template-areas: "c c c" "m p a" "r r r";
