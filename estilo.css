@@ -3,30 +3,29 @@
     padding: 0;
 }
 
-body{}
+#nav-topo {
+    width: 100%
+    height: 180px;
+    background-color: blue
+}
+
+body{
+    background-color: 
+}
 
 section {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-template-rows: 5vh 5vh 5vh 5vh;
-    grid-template-areas: "c c c" "m p a" "r r r";
-
+    
 }
 
 header {
-    background-color: #7c7c7c;
-    grid-area: c;
+    
 }
 
-#nav-topo {
-
-    background-color: #F5F3F3;
-    grid-area: m;
 }
-aside {
+article {
         height: 100px;
-        background-color: #C4C4C4;
-        grid-area: a;
+        background-color: #280248;
+       
 }
         footer {
             background-color: #212121;
