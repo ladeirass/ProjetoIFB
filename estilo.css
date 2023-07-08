@@ -62,7 +62,7 @@ a{
   text-align: center;
 }
 
-main{
+#pag-index{
   
   width: auto;
   height: 495px;
@@ -97,10 +97,9 @@ section p {
   color: #777;
 }
 
-img{
+.img-topico{
   margin-top: 52px;
   padding: 80px;
-  float: left;
   margin-left: 20px;
 
 }
@@ -137,4 +136,38 @@ footer {
 }
 
 
+/*PAGINA SOBRE*/
 
+.robozin{
+}
+
+.pag-sobre{
+
+  margin-top: 35px;
+  height: 800px;
+  background-color: #280248;
+  margin-left: 260px;
+  width: 70%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px #7706D4;
+  transition: 0.5s;
+  padding: -5px;
+  display: flex;
+
+}
+
+.htres-pagsobre{
+  padding: 50px;
+}
+
+.texto-sobre{
+  padding: 60px;
+  margin-right: 260px;
+}
+#pagina-sobre{
+  idth: auto;
+  height: 495px;
+  background-color: #280248;
+
+  
+}
