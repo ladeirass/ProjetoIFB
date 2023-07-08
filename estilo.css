@@ -20,12 +20,35 @@ header {
 main{
   
   width: auto;
-  height: 495px;
+  height: 600px;
   background-color: #280248;
-  
+  display: table; /*Possibilita que a box se mova em relação ao main*/
   margin left: 1px;
 
 }
+
+.box { /*Filha do meain*/
+width: 562px;
+height: 462px;
+display: inline-block;
+background-color: #7006C7;
+border-radius: 25px;
+margin-left: 69px;
+margin-top: 50px;
+margin-right: 200px;
+}
+
+.box-img { /*Filha do meain*/
+width: 855px;
+height: 505px;
+display: inline-block;
+background-color: #EEEE;
+
+margin-left: 781px;
+margin-top: -465px;
+margin-right: -200px;
+}
+
 
 
 #nav-topo ul {
