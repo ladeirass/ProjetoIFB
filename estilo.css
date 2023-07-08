@@ -12,6 +12,8 @@ p, h3, h2{
 }
 
 .text-main{
+    margin-top: 35px;
+    height: 300px;
     background-color: #280248;
     margin-left: 75px;
     width: 25%;
@@ -19,8 +21,12 @@ p, h3, h2{
     box-shadow: 0 8px 16px #7706D4;
     transition: 0.5s;
     padding: 30px;
+    display: flex;
 }
 
+.banner{
+    margin-left: 900px;
+}
 header {
   
   display: block;
@@ -31,7 +37,6 @@ header {
 
 nav{
     text-align: right;
-    padding: 10px;
 }
 
 a{
@@ -60,38 +65,8 @@ a{
 main{
   
   width: auto;
-  height: 600px;
+  height: 495px;
   background-color: #280248;
-<<<<<<< HEAD
-=======
-  display: table; /*Possibilita que a box se mova em relação ao main*/
-  margin left: 1px;
-
-}
->>>>>>> 7fa019db331f64c5ac86cdd0ac3bb56cb1b2b01c
-
-.box { /*Filha do meain*/
-width: 562px;
-height: 462px;
-display: inline-block;
-background-color: #7006C7;
-border-radius: 25px;
-margin-left: 69px;
-margin-top: 50px;
-margin-right: 200px;
-}
-
-.box-img { /*Filha do meain*/
-width: 855px;
-height: 505px;
-display: inline-block;
-background-color: #EEEE;
-
-margin-left: 781px;
-margin-top: -465px;
-margin-right: -200px;
-}
-
 
 
 }
@@ -123,11 +98,17 @@ section p {
 }
 
 img{
-  padding:80px;
+  margin-top: 52px;
+  padding: 80px;
+  float: left;
+  margin-left: 20px;
+
 }
 
 .cardoso{
-  margin-right: 10px;
+ margin-top: 10px;
+ padding: -20px;
+ margin-right: 100px;
 }
 
 .card-card{
