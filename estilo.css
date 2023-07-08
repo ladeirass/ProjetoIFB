@@ -7,6 +7,19 @@ body {
   font-family: Arial, sans-serif;
   background-color: white;
 }
+p, h3, h2{
+  color: #FFF;
+}
+
+.text-main{
+    background-color: #280248;
+    margin-left: 75px;
+    width: 25%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px #7706D4;
+    transition: 0.5s;
+    padding: 30px;
+}
 
 header {
   
@@ -16,27 +29,41 @@ header {
   text-align: right;
 }
 
+nav{
+    text-align: right;
+    padding: 10px;
+}
+
+a{
+    font: 1.2rem Open Sans, sans-serif;
+    text-decoration: none;
+}
+
+.a-menu{
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.a-menu:link,.a-menu:visited{
+    color:#000 ;
+}
+
+.a-menu:hover, .a-menu:active{
+    color: purple;
+}
+
+#text-main{
+  text-align: right;
+  text-align: center;
+}
 
 main{
   
   width: auto;
   height: 495px;
   background-color: #280248;
-  
-  margin left: 1px;
-
-}
 
 
-#nav-topo ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#nav-topo li {
-  display: inline;
-  margin-right: 10px;
 }
 
 section {
@@ -52,19 +79,6 @@ section > div /* Seletor de filhos (en-US)
     Sintaxe: A > B Exemplo: ul > li irá corresponder a todo elemento <li> que estiver diretamente dentro de um elemento <ul> especificado.
 */
 
-{
-  background-color: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.div-img > img {
-  width: 100px;
-  max-width: 50%;
-  height: auto;
-}
-
 section h2 {
   margin-top: 10px;
   font-size: 24px;
@@ -78,10 +92,38 @@ section p {
   color: #777;
 }
 
+img{
+  padding:80px;
+}
+
+.cardoso{
+  margin-right: 10px;
+}
+
+.card-card{
+  background-color: #280248;
+  margin-left: -90px;
+  width: 85%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px #7706D4;
+  transition: 0.5s;
+  padding: 30px;
+}
+
+.topico{
+  background-color: #EDBBFE;
+}
+    
+footer p{
+    text-align: right;
+    color: #000;
+}      
+
 footer {
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
 }
+
 
 
