@@ -152,39 +152,44 @@ footer p{
 }      
 
 footer {
-  background-color: #f2f2f2;
+  background-color: #D9D9D9;
   padding: 20px;
-  text-align: center;
 }
 
 
 /*PAGINA SOBRE*/
 
 .robozin{
+ width: 90%;
+ height: 150px;
+ background-color: yellow;
+ border-radius: 8px;
 }
 
+#fundo{
+  background-color: #EDBBFE;
+}
 .pag-sobre{
 
-  margin-top: 35px;
-  height: 800px;
-  background-color: #280248;
-  margin-left: 260px;
-  width: 70%;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px #7706D4;
-  transition: 0.5s;
-  padding: -5px;
-  display: flex;
+  width: 50%;
+  height: 60spx;
+  background-color: lightskyblue;
+  border-radius: 50px 50px 50px;
+  position: relative;
+  top: 40px ;
+  left: 350px;
 
 }
 
 .htres-pagsobre{
-  padding: 50px;
+  text-align: center;
 }
 
 .texto-sobre{
-  padding: 60px;
-  margin-right: 260px;
+  padding: 100px;
+  margin-right: 20px;
+  margin-left: 50;
+  text-align: center;
 }
 #pagina-sobre{
   idth: auto;
@@ -192,4 +197,11 @@ footer {
   background-color: #280248;
 
   
+}
+
+#rodape{
+  background-color: #D9D9D9;
+  padding: 20px;
+  margin-top: 100px;
+  text-align: center;
 }
