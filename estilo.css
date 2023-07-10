@@ -28,25 +28,16 @@ p, h3, h2{
     display: flex;
 }
 
-.banner > img /* > pega as propriedades */
+#banner /* > pega as propriedades */
 {
-width: 855px;
-height: 493px;
+width: 800px;
+height: 490px;
 display: block;
 background-color: transparent;
-margin-left: 0px;
-margin-top: 13px;
+margin-left: 200px;
+margin-top: -80px;
 margin-right: 0px;
-}
-
-.box-img  { /*Filha do meain*/
-width: 855px;
-height: 505px;
-display: flex;
-background-color: transparent;
-margin-left: 781px;
-margin-top: -177px;
-margin-right: -200px;
+margin-bottom: 100px;
 }
 
 header {
@@ -64,8 +55,7 @@ nav{
 a{
     font: 1.2rem Open Sans, sans-serif;
     text-decoration: none;
-}
-
+}6
 .a-menu{
     margin-right: 40px;
     font-weight: bold;
