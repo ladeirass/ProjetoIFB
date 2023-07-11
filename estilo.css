@@ -154,6 +154,22 @@ section p {
   padding: 30px;
 }
 
+.card-card:hover{
+  box-shadow: 0 16px 32px #212121;
+}
+
+.card-card{
+    margin-right: 40px;
+    font-weight: arial;
+}
+
+.card-card:link,.card-card:visited{
+    color:#FFF ;
+}
+
+.a-menu:hover, .card-card:active{
+    color: none;
+}
 .topico{
   background-image: linear-gradient(to right, #EDBBFE , #2C6ED0);
 
