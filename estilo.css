@@ -181,6 +181,7 @@ footer p{
 }      
 
 footer {
+  margin-top: 100px;
   background-color: #D9D9D9;
   padding: 20px;
 }
@@ -244,3 +245,47 @@ footer {
   margin-top: 100px;
   text-align: center;
 }
+
+/*sobre nós*/
+
+.sobren{
+  background-color: #FFF;
+  margin-left: 100px;
+  margin-top: 100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px #000;
+  transition: 0.5s;
+  padding: 30px;
+}
+
+.sobren h2{
+  color: #000;
+  text-align: center;
+}
+
+.sobren p{
+  color: #000;
+  text-align: center;
+}
+
+.sobren img{
+  margin-left: 75px;
+}
+
+.funciona{
+  padding:2px;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  margin-right: 70px;
+  margin-top: 20px;
+}
+
+.foto{
+  width: 105px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  } 
