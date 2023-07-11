@@ -7,6 +7,24 @@ nav{
   margin-right:200px;
 }
 
+a{
+    font: 1.2rem Open Sans, sans-serif;
+    text-decoration: none;
+}
+
+.a-menu{
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.a-menu:link,.a-menu:visited{
+    color:#FFF ;
+}
+
+.a-menu:hover, .a-menu:active{
+    color: yellow;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: white;
