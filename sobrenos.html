@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Provisorio</title>
+  <title>Robotitec</title>
   <meta charset="utf-8" />
   <meta name="keywords" content="Nomades" />
   <meta name="keywords" content="AI, Inteligência Artificial, programação">
@@ -44,6 +44,20 @@
 </form>
 
 <body class="topico">
+    <div id="contatus">
+  <p>Digite o seu nome:</p>
+   Nome: <input type="text" id="nome" onblur="veriNome()">
+  <button id="ok" onclick="">Ok</button>  
+     <p>Digite o seu telefone:</p>
+  Telefone: <input type="text" id="telefone" onblur="veriTelefone()">
+  <button id="ok" onclick="">Ok</button>
+     <p>Digite o seu e-mail:</p>
+  e-mail: <input type="text" id="email" onblur="veriEmail()"> 
+  <button id="ok" onclick="">Ok</button>
+     <p>Digite a sua mensagem:</p>
+    Mensagem: <input type="text" id="mensagem" onblur="veriMensagem()">
+      <button id="ok" onclick="">Ok</button>  
+</div>
     <section>
       <div class="sobren">
         <img class="foto" src="img/marcus.png" width="100"/>
@@ -81,5 +95,60 @@
       <p>Desenvolvido por Nomades Website - 2023</p>
     </footer>
 </body>
+<script language="javascript">
+function veriNome(){
+  var nomeD = document.getElementById('nome').value;
+  
+  if( nomeD.length == 0)
+  {
+       alert("Preencha o campo com seu nome!");
+  }
+  else if(nomeD.length < 5)
+  {
+    alert("O nome deve ter pelo menos 5 caracteres!");
+  }
+  
+}
+function veriTelefone(){
+  var telefoneD = document.getElementById('telefone').value;
+}
+function veriEmail(){
+  var emailD = document.getElementById('email').value;
+  
+  if( emailD.length == 0)
+  {
+       alert("Preencha o campo com seu email!");
+  }
+  else if(emailD.length < 5)
+  {
+    alert("O e-mail deve ter pelo menos 5 caracteres!");
+  }
+  else
+  {
+    alert("O nome digitado foi " + emailD);
+  }
+}
+  
+  function veriMensagem(){
+  var mensagemD = document.getElementById("mensagem").value;
+  
+  if(mensagemD.length < 20)
+  {
+    alert("A mensagem deve ter pelo menos 20 caracteres!");
+
+  }
+  
+  else if(mensagemD.length > 200)
+  {
+            alert("A mensagem deve ter no mínimo 200 caracteres!");
+       
+  }
+  else
+  {
+    alert("O mensagem digitado foi " + mensagemD);
+  }
+}
+
+</script>
 
 </html>
