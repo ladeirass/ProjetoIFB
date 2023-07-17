@@ -1,111 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Provisorio</title>
+  <title>Contato</title>
   <meta charset="utf-8" />
-  <meta name="keywords" content="Nomades" />
-  <meta name="keywords" content="AI, Inteligência Artificial, programação">
-  <meta name="description" content="Tesxtos sobre o impacto da inteligencia artificial na informatica" />
   <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
-<body class="topico">
-  <header>
-    <nav id="nav-topo">
-      <a class="a-menu" href="index.html">HOME</a>
-      <a class="a-menu" href="#">CONTATO</a>
-    </nav>
-  </header>
+<header>
+  <nav id="nav-topo">
+    <a class="a-menu" href="index.html">HOME</a>
+    <a class="a-menu" href="#">SOBRE</a>
+  </nav>
 
+</header>
+
+
+<body class="topico">
   <h2 id="entreemcontato">Contato</h2>
   <p id="pzin">Entre em contato conosco!</p>
 
-  <form id="formin" name="" method="" action="arquivo.js">
-    <label for="nome">Nome:</label>
-    <input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required autofocus />
+  <div id="contatus">
+    <form>
+      
+      Nome:<br> <input type="text" id="nome" onblur="veriNome(event)" placeholder="Digite o seu nome:"/>
+      <br>
+      
+      Telefone: <input type="text" id="telefone" onblur="veriTelefone(event)"placeholder= "Digite o seu telefone:"/>
+      <br>
+      
+      E-mail: <input type="text" id="email" onblur="veriEmail(event)" placeholder= "Digite o seu e-mail:"/>
+      <br>
+      
+      Mensagem: <input type="text" id="mensagem" onblur="veriMensagem(event)" placeholder="Digite a sua mensagem:">
+      <br>
+      <button type="submit">Enviar</button>
+      <button type="button" onclick="cancelarEnvio()">Cancelar</button>
+    </form>
+  </div>
 
-    <label for="email">E-mail:</label>
-    <input id="email" type="email" name="email" placeholder="nomedeusuario@gmail.com">
-
-    <label for="telefone">Celular</label>
-    <input id="telefone" type="tel" name="celular" size="80" placeholder="(99)9999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
-
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" cols="52" rows="4"></textarea>
-
-    <div id="botoes-forms">
-      <input type="submit" name="btn-agendar" value="AGENDAR" />
-      <input type="reset" name="btn-cancelar" value="CANCELAR" />
-    </div>
-  </form>
-
-  <section>
-    <div class="sobren">
-      <img class="foto" src="img/marcus.png" width="100"/>
-      <h2>Felipe de Matos</h2>
-      <p>Programador FrontEnd</p>
-      <div class="funciona">
-        <a href="https://www.instagram.com/" target="_blank"><img src="img/logoinsta.png" width="30"></a>
-        <a href="https://mail.google.com" target="_blank"><img src="img/logoemail.png" width="30"></a>
-      </div>
-    </div>
-
-    <div class="sobren">
-      <img class="foto" src="img/felipes.png" width="100"/>
-      <h2>Marcus Vinícius</h2>
-      <p>Programador FrontEnd</p>
-      <div class="funciona">
-        <a href="https://www.instagram.com/" target="_blank"><img src="img/logoinsta.png" width="30"></a>
-        <a href="https://mail.google.com" target="_blank"><img src="img/logoemail.png" width="30"></a>
-      </div>
-    </div>
-
-    <div class="sobren">
-      <img class="foto" src="img/rafaela.jpg" width="100"/>
-      <h2>Rafaela S. Cerqueira</h2>
-      <p>Programadora FrontEnd</p>
-      <div class="funciona">
-        <a href="https://www.instagram.com/" target="_blank"><img src="img/logoinsta.png" width="30"></a>
-        <a href="https://mail.google.com" target="_blank"><img src="img/logoemail.png" width="30"></a>
-      </div>
-    </div>
-  </section>
-
-  <script type="text/javascript">
-    function veriNome() {
+  <script language="javascript">
+    function veriNome(){
       var nomeD = document.getElementById('nome').value;
-      if (nomeD.length == 0) {
-        alert("Preencha o campo com seu nome!");
-      } else if (nomeD.length < 5) {
-        alert("O nome deve ter pelo menos 5 caracteres!");
-      }
+
+      if( nomeD.length == 0)
+      {
+       alert("Preencha o campo com seu nome!");
+     }
+     else if(nomeD.length < 5)
+     {
+      alert("O nome deve ter pelo menos 5 caracteres!");
     }
 
-    function veriEmail() {
-      var emailD = document.getElementById('email').value;
-      if (emailD.length == 0) {
-        alert("Preencha o campo com seu email!");
-      } else if (emailD.length < 5) {
-        alert("O e-mail deve ter pelo menos 5 caracteres!");
-      } else {
-        alert("O e-mail digitado foi " + emailD);
-      }
-    }
+  }
+  function veriTelefone(){
+    var telefoneD = document.getElementById('telefone').value;
+  }
+  function veriEmail(){
+    var emailD = document.getElementById('email').value;
 
-    function veriMensagem() {
-      var mensagemD = document.getElementById("mensagem").value;
-      if (mensagemD.length < 20) {
-        alert("A mensagem deve ter pelo menos 20 caracteres!");
-      } else if (mensagemD.length > 200) {
-        alert("A mensagem deve ter no máximo 200 caracteres!");
-      } else {
-        alert("A mensagem digitada foi " + mensagemD);
-      }
-    }
-  </script>
+    if( emailD.length == 0)
+    {
+     alert("Preencha o campo com seu email!");
+   }
+   else if(emailD.length < 5)
+   {
+    alert("O e-mail deve ter pelo menos 5 caracteres!");
+  }
+  else
+  {
+    alert("O nome digitado foi " + emailD);
+  }
+}
 
-  <footer>
-    <p>Desenvolvido por Nomades Website - 2023</p>
-  </footer>
+function veriMensagem(){
+  var mensagemD = document.getElementById("mensagem").value;
+  
+  if(mensagemD.length < 20)
+  {
+    alert("A mensagem deve ter pelo menos 20 caracteres!");
+
+  }
+  
+  else if(mensagemD.length > 200)
+  {
+    alert("A mensagem deve ter no mínimo 200 caracteres!");
+
+  }
+  else
+  {
+    alert("O mensagem digitado foi " + mensagemD);
+  }
+}
+
+</script>
+ <footer id="rodape">
+      <p>Desenvolvido por Nomades Website - 2023</p>
+    </footer>
 </body>
+
 </html>
